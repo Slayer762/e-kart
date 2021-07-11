@@ -5,6 +5,7 @@
   "description": "E-commerce Website",
   "main": "index.js",
   "scripts": {
+    "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd frontend && npm install && npm run build"
   },
