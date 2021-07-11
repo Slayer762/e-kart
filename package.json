@@ -1,0 +1,39 @@
+{
+  "name": "e-kart",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "E-commerce Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd frontend && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slayer762/ekart-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.13.2",
+    "multer": "^1.4.2",
+    "react-google-charts": "^3.0.15",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0",
+    "nodemon": "^2.0.9"
+  },
+  "engines": {
+    "node": "14.16.1",
+    "npm": "6.14.12"
+  },
+  "heroku-run-build-script": true
+}
