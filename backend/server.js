@@ -129,6 +129,8 @@ httpServer.listen(port, () => {
 //app.listen(port, () => {
 //  console.log(`Serve at http://localhost:${port}`);
 //});
+
 //"build": "cd frontend && npm install && npm run build",
 //"start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
 //"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd frontend && npm install && npm run build"
+//MONGODB_URL=mongodb+srv://e-kart:e123k456@cluster0.okrxu.mongodb.net/e-kart?retryWrites=true&w=majority
